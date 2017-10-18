@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Archibald Bingo</title>
+</head>
+
+<body>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .game-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            margin: 0 20px;
+            width: 700px;
+            height: 700px;
+        }
+
+        .game-wrapper div{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .game-wrapper div:hover{
+            background: #c8e6c9;
+        }
+
+        .game-wrapper .active{
+            background: #2e7d32 !important;
+            color: #FFF;
+        }
+    </style>
+    <h1>Archibald Bingo</h1>
+    <div class="game-wrapper">
+        <div>streams</div>
+        <div>service workers</div>
+        <div>http2</div>
+        <div>fetch</div>
+        <div>toilet joke</div>
+        <div>offline</div>
+        <div>lie-fi</div>
+        <div>async functions</div>
+        <div>image</div>
+        <div>rendering performace</div>
+        <div>svg</div>
+        <div>canvas</div>
+        <div>progressive enhancement</div>
+        <div>writeable streams</div>
+        <div>http2 push</div>
+        <div>asyc iterators</div>
+        <div>drunk story</div>
+        <div>generators</div>
+        <div>making up things</div>
+        <div>cache</div>
+        <div>more streams</div>
+        <div>now everyone is confused</div>
+        <div>service workers with streams</div>
+        <div>my head hurts</div>
+        <div>have i mentioned streams??</div>
+    </div>
+    <script type="text/javascript">
+        const fields = document.querySelectorAll('.game-wrapper div');
+        fields.forEach(elem=>{
+            elem.addEventListener('click',()=>{
+                elem.classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
